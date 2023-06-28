@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous"><!--CSS do Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet"><!--Importante, faz os icons aparecerem no footer-->
+    <link rel="stylesheet" href="css/footerindex.css"><!--CSS do footer-->
+    <link rel="stylesheet" href="css/estilobuttonzapinstaface.css"><!--CSS dos Icons das redes sociais-->
+    <link rel="stylesheet" href="css/cardindex.css"><!--CSS do Card -->
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <title>Menu</title>
+    <style>
+        ::-webkit-scrollbar {
+            width: 10px;
+        }
+        
+        ::-webkit-scrollbar-track {
+            background: color rgb(72, 0, 205);
+            border: radius 30px;
+        }
+        
+        .card {
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            transition: 0.3s;
+            width: 300px;
+            margin: 10px;
+        }
+        
+        .card:hover {
+            box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+        }
+        
+        .container {
+            padding: 2px 16px;
+        }
+        
+        .carousel {
+            margin-bottom: 20px;
+        }
+        
+        footer {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <!--Navbar-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">Hotel Lunari</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="formulario.php">Cadastro</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="reserva.php">Reserva</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="login.php">Login</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!--Terimino do Navbar-->
+
+    <!--Carousel-->
+    <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="10000">
+                <img src="img/imghotel.png" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+                <img src="img/imghotel1.png" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="img/imghotel2.png" class="d-block w-100" alt="...">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    <!--Termino do Carousel-->
+
+    <!--Cards-->
+    <div class="d-flex flex-wrap justify-content-center">
+        <div class="card">
+            <img src="img/cama.jpg" alt="Avatar" style="width:100%">
+            <div class="container">
+                <h4><b>Villa Jardim</b></h4>
+                <p> As Vilas Jardim possuem duas suítes, sala de estar, uma ampla varanda, uma decoração moderna e clean. As Vilas Jardim têm uma linda vista do nosso coqueiral e acomodam até 4 pessoas com privacidade e conforto, em seus 120 m².</p>
+                <a href="reserva.php" class="btn btn-primary">Reservar</a>
+            </div>
+        </div>
+        <div class="card">
+            <img src="img/cama2.jpg" alt="Avatar" style="width:100%">
+            <div class="container">
+                <h4><b>Bangalô Coqueiral & Piscina</b></h4>
+                <p>Com uma piscina privativa e vista para o coqueiral, os bangalôs Coqueiral & Piscina foram projetados para proporcionar uma estada com muito conforto, privacidade e estilo. Os bangalôs possuem uma área de 100m² e acomodam até 2 pessoas.</p>
+                <a href="reserva.php" class="btn btn-primary">Reservar</a>
+            </div>
+        </div>
+        <div class="card">
+            <img src="img/cama3.jpg" alt="Avatar" style="width:100%">
+            <div class="container">
+                <h4><b>Bangalô Oceano</b></h4>
+                <p>Com uma vista panorâmica do mar, nossos luxuosos bangalôs Oceano possuem uma generosa varanda, perfeita para descansar curtindo a brisa do mar. Com seus 75m² e uma decoração que mistura rústico e contemporâneo. Eles acomodam até 2 pessoas, garantindo privacidade e muito conforto.</p>
+                <a href="reserva.php" class="btn btn-primary">Reservar</a>
+            </div>
+        </div>
+    </div>
+    <!--Termino dos Cards-->
+
+    <!--Footer-->
+    <div style="background-color: rgb(10, 6, 14);">
+        <footer>
+            <div class="footer-content">
+                <h3 class="titulo"><img src="img/icon_hotel.png" style="width: 10%;"></h3>
+                <p class="subtitulo">
+                    <div style="background-color: rgb(10, 6, 14);">
+                        Este site foi criado pela equipe composta por Cauê Victor, Gabriel Sam, Gabriel Almeida, Letícia Albano, Mariana Elias e Brigida Maria (2° Informática-B-JAA) para um projeto do desenvolvimento de um website para o Hotel Lunari
+                    </div>
+                </p>
+                <div class="todosicon">
+                    <a class="ri-whatsapp-line icon" id="zap" href=""></a>
+                    <a class="ri-instagram-line icon" id="insta" href=""></a>
+                    <a class="ri-github-line icon" id="github" href=""></a>
+                    <p style="max-width: 500px; margin: 1px auto;line-height: 28px;font-size: 14px;">
+                        <a href="" style="text-decoration: none;"> copyright &copy;2023 Hotel Lunari
+                            <img src="img/cordeiro.png" alt="" style="width: 15%;margin-top: -5%;">
+                        </a>
+                    </p>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <!--Termino do Footer-->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+
+</body>
+
+</html>
